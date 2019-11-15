@@ -1,0 +1,11 @@
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.exe
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.deps.json
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.runtimeconfig.json
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.runtimeconfig.dev.json
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.dll
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\bin\Debug\netcoreapp3.0\SnakeDraft.pdb
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp3.0\SnakeDraft.csprojAssemblyReference.cache
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp3.0\SnakeDraft.AssemblyInfoInputs.cache
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp3.0\SnakeDraft.AssemblyInfo.cs
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp3.0\SnakeDraft.dll
+C:\Users\julia.voronetskaja\source\repos\SnakeDraft\SnakeDraft\obj\Debug\netcoreapp3.0\SnakeDraft.pdb
