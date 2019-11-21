@@ -4,13 +4,14 @@ using System.Text;
 
 namespace Point
 {
-    class VerticalLine
+    class VerticalLine : Figure
     {
-        public List<MyPoint> pointList = new List<MyPoint>();
+       
 
         public VerticalLine(int yTop, int yBottom, int x, char symbol)
         {
-            for(int i = yTop; i <= yBottom; i++)
+            
+            for (int i = yTop; i <= yBottom; i++)
             {
                 MyPoint newPoint = new MyPoint(x, i, symbol);
                 pointList.Add(newPoint);
@@ -18,12 +19,12 @@ namespace Point
             }
         }
 
-        public void DrawVerticalLine()
+        /*public void DrawVerticalLine()
         {
             foreach(MyPoint point in pointList)
             {
                 point.Draw();
             }
-        }
+        }*/
     }
 }

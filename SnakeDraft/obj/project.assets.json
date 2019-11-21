@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\julia.voronetskaja\\source\\repos\\SnakeDraft\\SnakeDraft\\SnakeDraft.csproj",
+      "projectUniqueName": "C:\\Users\\julia.voronetskaja\\Desktop\\TATge19-Lesson11-2-OOP-SnakeDraft\\SnakeDraft\\SnakeDraft.csproj",
       "projectName": "SnakeDraft",
-      "projectPath": "C:\\Users\\julia.voronetskaja\\source\\repos\\SnakeDraft\\SnakeDraft\\SnakeDraft.csproj",
+      "projectPath": "C:\\Users\\julia.voronetskaja\\Desktop\\TATge19-Lesson11-2-OOP-SnakeDraft\\SnakeDraft\\SnakeDraft.csproj",
       "packagesPath": "C:\\Users\\julia.voronetskaja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\julia.voronetskaja\\source\\repos\\SnakeDraft\\SnakeDraft\\obj\\",
+      "outputPath": "C:\\Users\\julia.voronetskaja\\Desktop\\TATge19-Lesson11-2-OOP-SnakeDraft\\SnakeDraft\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\julia.voronetskaja\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Point
 {
@@ -10,28 +11,24 @@ namespace Point
             Console.SetBufferSize(80, 25);
 
             HorizontalLine topLine = new HorizontalLine(0, 78, 0, '*');
-            topLine.DrawHorizontalLine();
+            topLine.DrawFigure();
             HorizontalLine bottomLine = new HorizontalLine(0, 78, 24, '*');
-            bottomLine.DrawHorizontalLine();
+            bottomLine.DrawFigure();
             VerticalLine leftLine = new VerticalLine(0, 24, 0, '*');
-            leftLine.DrawVerticalLine();
+            leftLine.DrawFigure();
             VerticalLine rightLine = new VerticalLine(0, 24, 78, '*');
-            rightLine.DrawVerticalLine();
+            rightLine.DrawFigure();
 
-
-            /*HorizontalLine hrLine = new HorizontalLine(5, 10, 10, '*');
-            hrLine.DrawHorizontalLine();
-
-            VerticalLine vrLine = new VerticalLine(11, 20, 5, '*');
-            vrLine.DrawVerticalLine();*/
-
-            /*for(int i = 5; i <10; i++)
-            {
-                MyPoint newPoint = new MyPoint(i, 5, '*');
-                newPoint.Draw();
-                MyPoint newPoint2 = new MyPoint(5, i, '#');
-                newPoint2.Draw();
-            }*/
+            MyPoint tail = new MyPoint(6, 5, '*');
+            Snake snake = new Snake(tail, 4, Direction.RIGHT);
+            snake.DrawFigure();
+            snake.MoveSnake();
+            Thread.Sleep(100);
+            snake.MoveSnake();
+            Thread.Sleep(100);
+            snake.MoveSnake();
+            Thread.Sleep(100);
+            snake.MoveSnake();
 
             Console.ReadLine();
         }
