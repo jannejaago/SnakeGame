@@ -22,13 +22,24 @@ namespace Point
             MyPoint tail = new MyPoint(6, 5, '*');
             Snake snake = new Snake(tail, 4, Direction.RIGHT);
             snake.DrawFigure();
-            snake.MoveSnake();
-            Thread.Sleep(100);
-            snake.MoveSnake();
-            Thread.Sleep(100);
-            snake.MoveSnake();
-            Thread.Sleep(100);
-            snake.MoveSnake();
+
+            FoodCatering foodCatered = new FoodCatering(80, 25, '$');
+            MyPoint food = foodCatered.CaterFood();
+            food.Draw();
+
+            while (true)
+            {
+                
+                if (Console.KeyAvailable)
+                { 
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.ReadUserKey(key.Key);
+                }
+
+                Thread.Sleep(100);
+                snake.MoveSnake();
+                
+            }
 
             Console.ReadLine();
         }

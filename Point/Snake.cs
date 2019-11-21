@@ -46,6 +46,24 @@ namespace Point
             return nextPoint;
         }
 
-
+        public void ReadUserKey(ConsoleKey key)
+        {
+            if(key == ConsoleKey.LeftArrow)
+            {
+                Direction = Direction.LEFT;
+            }
+            else if(key == ConsoleKey.RightArrow)
+            {
+                Direction = Direction.RIGHT;
+            } 
+            else if(key == ConsoleKey.UpArrow)
+            {
+                Direction = Direction.UP;
+            } 
+            else if(key == ConsoleKey.DownArrow)
+            {
+                Direction = Direction.DOWN;
+            }
+        }
     }
 }
