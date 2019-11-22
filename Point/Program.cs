@@ -7,8 +7,8 @@ namespace Point
     {
         static void Main(string[] args)
         {
-            Console.SetWindowSize(80, 25);
-            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(100, 55);
+            Console.SetBufferSize(100, 55);
 
             Walls walls = new Walls(80, 25);
             walls.DrawWalls();
@@ -52,7 +52,14 @@ namespace Point
 
         public static void WriteGameOver()
         {
-
+            Console.Clear();
+            int xOffset = 35;
+            int yOffset = 8;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.SetCursorPosition(xOffset, yOffset++);
+            ShowMessage("=========", xOffset, yOffset++);
+            ShowMessage("GAME OVER", xOffset, yOffset++);
+            ShowMessage("=========", xOffset, yOffset++);
         }
 
         public static void ShowMessage(string text, int xOffset, int yOffset)
