@@ -45,7 +45,20 @@ namespace Point
                 }                
             }
 
+            WriteGameOver();
+
             Console.ReadLine();
+        }
+
+        public static void WriteGameOver()
+        {
+
+        }
+
+        public static void ShowMessage(string text, int xOffset, int yOffset)
+        {
+            Console.SetCursorPosition(xOffset, yOffset);
+            Console.WriteLine(text);
         }
     }
 }
