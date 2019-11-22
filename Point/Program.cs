@@ -10,14 +10,8 @@ namespace Point
             Console.SetWindowSize(80, 25);
             Console.SetBufferSize(80, 25);
 
-            HorizontalLine topLine = new HorizontalLine(0, 78, 0, '*');
-            topLine.DrawFigure();
-            HorizontalLine bottomLine = new HorizontalLine(0, 78, 24, '*');
-            bottomLine.DrawFigure();
-            VerticalLine leftLine = new VerticalLine(0, 24, 0, '*');
-            leftLine.DrawFigure();
-            VerticalLine rightLine = new VerticalLine(0, 24, 78, '*');
-            rightLine.DrawFigure();
+            Walls walls = new Walls(80, 25);
+            walls.DrawWalls();
 
             MyPoint tail = new MyPoint(6, 5, '*');
             Snake snake = new Snake(tail, 4, Direction.RIGHT);
@@ -29,16 +23,26 @@ namespace Point
 
             while (true)
             {
+                if (walls.IsHitByFigure(snake))
+                {
+                    break;
+                }
+
+                if (snake.Eat(food))
+                {
+                    food = foodCatered.CaterFood();
+                    food.Draw();
+                }else
+                {
+                    snake.MoveSnake();
+                }
+                Thread.Sleep(300);
                 
                 if (Console.KeyAvailable)
                 { 
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.ReadUserKey(key.Key);
-                }
-
-                Thread.Sleep(100);
-                snake.MoveSnake();
-                
+                }                
             }
 
             Console.ReadLine();

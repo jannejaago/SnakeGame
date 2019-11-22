@@ -65,5 +65,19 @@ namespace Point
                 Direction = Direction.DOWN;
             }
         }
+
+        internal bool Eat(MyPoint food)
+        {
+            MyPoint head = GetNextPoint();
+            if (head.IsHit(food))
+            {
+                food.symbol = head.symbol;
+                pointList.Add(food);
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
     }
 }

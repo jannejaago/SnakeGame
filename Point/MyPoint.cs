@@ -55,6 +55,17 @@ namespace Point
             }
         }
 
+        public bool IsHit(MyPoint point) {
+            return point.x == this.x && point.y == this.y;
+        }
+
+
+
+
+
+
+
+
         public override string ToString()
         {
             return x + ", " + y + ", " + symbol;
